@@ -1,0 +1,478 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+ 
+   
+}
+
+::root{
+    /* colors */
+    --bg-color : #160d07;
+    --text-color : #fffdee;
+    --main-color : #ffa86a;
+    --other-color : #d6d4c8;
+    --second-color : #ffffff4f;
+    --alt-color : #7d5537;
+
+    /* font-sizes */
+    --h1-font : 7.5rem;
+    --h2-font: 5.5rem;
+    --p-font : 1.1rem;
+
+}
+
+body{
+    color : var(--text-color);
+    background : linear-gradient(250.55deg,#120b07 0%, #311b0d 28.55% , #160d07 75.55%);
+}
+
+header{
+    position : fixed;
+    width : 100%;
+    top : 0;
+    right : 0;
+    z-index: 1000;
+    padding: 28px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.7s ease;
+}
+
+.navlinks .a{
+    display: inline-block;
+    margin : 0 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color : #d6d4c8;
+}
+
+.navlinks .a:hover{
+    color : #ffa86a;
+}
+
+.nav-side{
+    display: flex;
+    align-items: center;
+}
+
+.work-btn{
+    display: inline-block;
+    padding: 14px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #eae9e5;
+    border: 1px solid #6f6d6d4f;
+    border-radius: 8px;
+    transition: all .7s ease;
+}
+
+
+.work-btn:hover{
+  background:#ffa86a ;
+  border: 1px solid #ffa86a;
+  color :#160d07;
+  transform: scale(1.07)translateY(-5px);
+}
+
+#menu-icon{
+    font-size: 42px;
+    z-index: 10001;
+    cursor : pointer;
+    margin-left : 50px;
+    color : #160d07;
+    display: none;
+}
+
+.home{
+    color: white;
+}
+
+section{
+    padding : 90px 20px 20px 20px
+}
+
+.home{
+    position: relative;
+    width :100%;
+    height : 50vh;
+    display:grid;
+    grid-template-columns:repeat(2,1fr) ;
+  align-items: center;
+}
+
+.home-image{
+ width : 100%;
+ height : auto;
+ column-gap: 50px;
+ background-size: cover;
+ padding-left: 200px;
+}
+
+.home-text{
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.home-text h1{
+    font-family: "Forum",sans-serif;
+    font-size: 7.5rem;
+    font-weight: 500;
+    margin : 22px 0;
+}
+
+.home-text h4{
+    font-size:30px ;
+    font-weight: 500;
+    color : #ffa86a;
+    font-family: "forum",sans-serif;
+}
+
+.home-text p{
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+}
+
+.social{
+ position: absolute;
+ left: 50px;
+ top: 800px;
+  display: flex; 
+  width: 130px;
+  justify-content: space-between;
+}
+
+.facebook,.instagram,.dribble{
+    color: white;
+    font-size: 1.7rem;
+    transition: all .6s ease-out;
+}
+
+.dribble:hover{
+  color: #ffa86a;
+  transform: scale(1.4) translateY(-2px);
+ 
+}
+
+.facebook:hover{
+color: #ffa86a;
+transform: scale(1.4) translateY(-2px);
+}
+
+.instagram:hover{
+    color: #ffa86a;
+    transform: scale(1.4) translateY(-2px);
+}
+
+.arrow-box{
+    position : absolute;
+    font-size: 1.7rem;
+    top: 800px;
+    left: 48%;
+}
+
+.arrow-box i{
+  top: 800px;
+  display: inline-flex;
+  width: 90px;
+  height: 90px;
+ background-color:#ffa86a ;
+ align-items: center;
+ justify-content: center;
+ color: black;
+ font-size: 45px;
+ border-radius: 50%;
+ transition: all 0.6s ease;
+}
+
+i:hover{
+   background-color: transparent ;
+   border-radius: 50%;
+    border: 1px solid #ffa86a;
+    color: white;
+    font-size: 35px;
+    transform: scale(0.8);
+
+}
+.about-image{
+    padding-top: 530px;
+    padding-left: 100px;
+}
+
+.about-text{
+    color: white;
+   white-space: wrap;
+   padding-left: 100px;
+   padding-top: 530px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+}
+
+.about-text h2{
+    font-family: "Forum",sans-serif;
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin : 22px 0;
+    line-height: 80px;
+}
+
+.about-text p{
+    font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 1px;
+}
+
+.btn {
+    font-size: 18px;
+    font-family: "Forum";
+    color: black;
+    display: inline-flex;
+    height: 50px;
+    width: 150px;
+    background-color: #ffa86a;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 560;
+    transition: all .6s ease;
+}
+
+.btn:hover{
+    background-color: transparent ;
+     border: 1px solid #ffa86a;
+     color: white;
+     transform: scale(1.1) translateY(-5px);
+}
+
+.shop-content{
+    color: white;
+}
+
+header.sticky{
+    background : linear-gradient(250.55deg,#120b07 0%, #311b0d 28.55% , #160d07 75.55%);
+    padding: 20px 13% ;
+}
+
+.head-text{
+    color : white;
+}
+
+
+.head-left h4{
+font-size: 5.5rem;
+font-weight: 500;
+font-family: "Forum",sans-serif;
+padding-left:300px ;
+}
+
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(3,max(250px));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    text-align: center;
+
+}
+.box h3{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+ .box-image img{
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all .7s ease;
+    background: linear-gradient(rgba(255, 168, 106, 0.35) 0% , rgba(3, 3, 3, 0.77) 64% ,rgba(3, 3, 3) 100%);
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+.shop-content{
+  display: grid;
+     justify-content: space-between;
+     width: 60%;
+     padding: 50px 20px;
+   border: 5px solid transparent ;
+   padding-left: 400px;   
+}
+
+.box h3{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 12px 0;
+    font-family: "Forum",sans-serif;
+}
+
+.bx-cart{
+    color: #eae9e5;
+    font-size: 30px;
+}
+
+.box h5{
+    font-size: large;
+    color: #d6d4c8;
+}
+
+ .box .cart i {
+    display: inline-flex;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #ffa86a;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all .6s ease;
+
+}
+
+.bx-cart:hover{
+    background: linear-gradient(rgba(255, 168, 106, 0.35) 0% , rgba(3, 3, 3, 0.77) 64% ,rgba(3, 3, 3) 100%); ;
+    border: 1px solid #ffa86a;
+    color: white;
+    transform: scale(1.1) translateY(-5px);
+}
+
+.box:hover img{
+    transform: scale(1.1) translateY(-6px);
+}
+
+.box:hover h3{
+    color: #ffa86a;
+}
+
+.exb-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap : 1rem;
+  
+}
+
+.exb-img{
+    max-width: 530px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.8rem;
+    margin-left: 150px;
+
+}
+
+.exb-text{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 20px
+}
+
+.row:not(:last-child){
+border-bottom: 1px solid #ffa86a;
+border-width: 40%;
+padding-bottom: 30px;
+width: 100%;
+}
+
+.row h5{
+    font-family: "Forum",sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    transition: all .7s ease;
+}
+
+.row a{
+    color : #ffa86a;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.row:hover{
+color :#ffa86a;
+}
+
+.contact-content {
+    color : white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding : 50px;
+    align-items: center;
+    
+}
+
+.contact-content h2 {
+  font-family: "Forum",sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 5.5rem;
+}
+
+.contact-content hr{
+width : 15%;
+border : 1px solid #ffa86a;
+margin-bottom: 50px;
+cursor: pointer;
+transition: all .7s ease;
+}
+
+.contact-content:hover hr{
+    width : 20.3333%;
+}
+
+.contact-content p{
+    color : #d6d4c8;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.s-links a{
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 14px;
+    font-weight: 500;
+    color :#ffa86a;
+    border: 1px solid #ffffff4f;
+    margin-right: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .7s ease;
+}
+
+.s-links a:hover{
+    background-color: #ffa86a;
+    color: #160d07;
+    transform: scale(1.1) translateY(-5px);
+}
