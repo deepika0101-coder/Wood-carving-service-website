@@ -1,4 +1,5 @@
 Author - Deepika
 <br>
-<p>the wood carving service website is made by using HTML and CSS.</p>
-<p>i have used modern transition effects which you can be seen on websites like netflix;</p>
+A beautifully designed and animated website showcasing woodcarving art and craftsmanship. This project features smooth animations, and an elegant presentation of woodcarving techniques
+<br>
+ALERT : not a responsive website.
